@@ -35,7 +35,6 @@ let array;
 document.querySelector(".start").onclick = () => {
     document.querySelector(".next-word").style.display = "flex";
     array = [...arraylevl[def_level]];
-    console.log(array)
     input.value = "";
     document.querySelector(".control .got").textContent = 0;
     document.querySelector(".message").style.display = "none";
