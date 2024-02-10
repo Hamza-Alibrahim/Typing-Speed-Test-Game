@@ -1,0 +1,158 @@
+:root {
+    --main-color: #2196f3;
+    --second-color: #9c27b0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #E0E0E0;
+}
+
+.game {
+    width: 900px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.one {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.name {
+    padding: 15px;
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.container {
+    text-align: center;
+    width: 850px;
+    margin: 10px auto;
+}
+
+.message {
+    font-size: 18px;
+}
+
+.message select {
+    border: none;
+    outline: none;
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.message span {
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.message span::before {
+    content: "[ ";
+    color: var(--second-color);
+}
+
+.message span::after {
+    content: " ]";
+    color: var(--second-color);
+}
+
+.start {
+    margin-top: 10px;
+    color: white;
+    background-color: var(--second-color);
+    cursor: pointer;
+}
+
+.start:hover {
+    background-color: #9b27b0e8;
+}
+
+.the-word {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--main-color);
+    padding: 10px;
+    user-select: none;
+}
+
+.input {
+    width: 100%;
+    border: 3px solid var(--main-color);
+    outline: none;
+    text-transform: capitalize;
+    text-align: center;
+    caret-color: var(--main-color);
+}
+
+.next-word {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.next-word div {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: white;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control .got,
+.time span,
+.total {
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.details {
+    background-color: var(--second-color);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.finish {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 15px;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    display: none;
+}
+
+.finish.good {
+    background-color: var(--main-color);
+}
+
+.finish.bad {
+    background-color: red;
+}
